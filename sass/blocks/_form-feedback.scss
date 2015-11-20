@@ -1,0 +1,86 @@
+.form-feedback{
+  text-align: center;
+  width: 355px;
+  margin: 0 auto;
+  .messages{
+    display: none;
+  }
+  &_title{
+    font-size: 26.5px;
+    font-family: PTSansBold;
+    text-align: center;
+    text-transform: uppercase;
+    max-width: 460px;
+    margin: 35px auto 27px auto;
+  }
+  &_inner{
+    margin-bottom: 21px;
+    input{
+      width: 335px;
+      height: 42px;
+      border: 1px solid #c7c7c7;
+      box-sizing: border-box;
+      text-align: center;
+      font-size: 18px;
+      &.error{
+        border-color: #8c2e0b;
+      }
+    }
+  }
+  &_button{
+    position: relative;
+    input{
+      border: none;
+      font-size: 22.5px;
+      text-transform: uppercase;
+      color: #ffffff;
+      width: 335px;
+      height: 42px;
+      background-color: #41acbf;
+      box-sizing: border-box;
+      opacity: 0.8;
+      &:hover{
+        opacity: 1;
+      }
+    }
+    .captcha{
+      width: 335px;
+      margin: 0 auto;
+      label{
+        color: #c7c7c7;
+        margin-bottom: 10px;
+      }
+      input{
+        border: none;
+        font-size: 22.5px;
+        text-transform: uppercase;
+        color: inherit;
+        text-align: center;
+        width: 120px;
+        height: 42px;
+        border: 1px solid #c7c7c7;
+        background-color: #ffffff;
+        box-sizing: border-box;
+        opacity: 1;
+        &.error{
+          border-color: #8c2e0b;
+        }
+      }
+      .description{
+        display: none;
+      }
+    }
+    .ajax-progress{
+      position: absolute;
+      bottom: 9px;
+      right: 105px;
+      .throbber {
+        background: transparent url('../image/ajax-loader-white.png') no-repeat 0px 0px;
+        float: left;
+        height: 25px;
+        width: 25px;
+        margin: 0px;
+      }
+    }
+  }
+}

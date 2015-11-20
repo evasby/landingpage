@@ -1,0 +1,22 @@
+.menu{
+  float: left;
+  padding: 7px 0px 0px 22px;
+  &_item{
+    display: inline;
+    margin-right: 5px;
+  }
+  &_link{
+    @include link(#83888b, #41acbf);
+    font-size: 13px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding-bottom: 1px;
+    &:hover{
+      border-bottom: 2px solid #41acbf;
+    }
+    &__active{
+      @include link(#41acbf, #41acbf);
+      border-bottom: 2px solid #41acbf;
+    }
+  }
+}

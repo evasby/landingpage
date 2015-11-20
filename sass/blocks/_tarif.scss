@@ -1,0 +1,106 @@
+.tarif{
+  border: 1px solid;
+  width: 300px;
+  margin: 0 auto;
+  box-shadow: -15px -15px 8px 0px rgba(65,172,191,0.1);
+  text-align: center;
+  padding-bottom: 22px;
+  p{
+    font-size: 15.5px;
+    position: relative;
+    text-align: center;
+    padding: 10px 15px 13px 15px;
+    line-height: 1.1;
+    color: #939698;
+    @include before{
+      position: absolute;
+      bottom: 0px;
+      left: 78px;
+      height: 1px;
+      width: 144px;
+      background-color: #f2f3f4;
+      border-bottom: 1px solid #f8f8f9;
+    }
+  }
+  &_title{
+    font-family: PTSansBold;
+    font-size: 19px;
+    text-transform: uppercase;
+    padding-top: 24px;
+    padding-bottom: 18px;
+    text-align: center;
+    border-bottom: 2px solid;
+    &__green{
+      color: #41acbf;
+      border-color: #41acbf;
+    }
+    &__blue{
+      color: #4168bf;
+      border-color: #4168bf;
+    }
+    &__red{
+      color: #bf4141;
+      border-color: #bf4141;
+    }
+  }
+  &_price{
+    font-family: OpenSansBold;
+    font-size: 19.5;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #cccccc;
+    padding: 24px 0px 22px 0px;
+    margin-bottom: 19px;
+    &__green{
+      background-color: #41acbf;
+    }
+    &__blue{
+      background-color: #4168bf;
+    }
+    &__red{
+      background-color: #bf4141;
+    }
+  }
+  &_link{
+    @include link(#cccccc, #cccccc);
+    font-family: OpenSansSemiBold;
+    font-size: 14px;
+    text-transform: uppercase;
+    border: 3px solid;
+    text-decoration: none;
+    padding: 6px 23px;
+    //@include def-transition(background-color, 0.2s);
+    transition: color, 0.2s;
+    &__green{
+      border-color: #41acbf;
+      @include link(#41acbf, #ffffff);
+      &:hover{
+        background-color: #41acbf;
+      }
+    }
+    &__blue{
+      border-color: #4168bf;
+      @include link(#4168bf, #ffffff);
+      &:hover{
+        background-color: #4168bf;
+      }
+    }
+    &__red{
+      border-color: #bf4141;
+      @include link(#bf4141, #ffffff);
+      &:hover{
+        background-color: #bf4141;
+      }
+    }
+  }
+  &__green{
+    border-color: #41acbf;
+  }
+  &__blue{
+    border-color: #4168bf;
+  }
+  &__red{
+    border-color: #bf4141;
+  }
+}

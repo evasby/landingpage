@@ -1,0 +1,81 @@
+body{
+  font-family: PTSansRegular;
+  color: $fontColor;
+  background-color: $backgroundColor;
+  min-width: $minWidth;
+}
+textarea{
+  resize: none;
+  box-shadow: none;
+  border-radius: 0px;
+}
+input{
+  box-shadow: none;
+  border-radius: 0px;
+}
+button, input[type="reset"], input[type="button"], input[type="submit"] {
+  box-shadow: none;
+  border-radius: 0px;
+}
+strong, b{
+  font-family: PTSansBold;
+}
+i{
+  font-family: PTSansItalic;
+}
+a{
+  //@include link(#373737, #373737);
+  &:focus{
+    outline: none;
+  }
+}
+pre{
+  white-space: normal;
+}
+h1, h2, h3, h4, h5, h6{
+  
+}
+::-webkit-input-placeholder{
+  color:#c7c7c7;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+::-moz-placeholder{
+  color:#c7c7c7;
+  font-size: 18px;
+  text-transform: uppercase;
+  opacity: 1;
+}/* Firefox 19+ */
+:-moz-placeholder{
+  color:#c7c7c7;
+  font-size: 18px;
+  text-transform: uppercase;
+  opacity: 1;
+}/* Firefox 18- */
+:-ms-input-placeholder{
+  color:#c7c7c7;
+  font-size: 18px;
+  text-transform: uppercase;
+  opacity: 1;
+}
+input{
+  &:focus{
+    outline: none;
+  }
+}
+textarea{
+  &:focus{
+    outline: none;
+  }
+}
+.hide{
+  display: none;
+}
+.inner{
+  width: 1000px;
+  padding: 0px 12px;
+  margin: 0 auto;
+  .main6 &{
+    //background-color: #ccc;
+  }
+}

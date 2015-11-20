@@ -1,0 +1,20 @@
+.main9{
+  height: 290px;
+  background-color: #dbe9e7;
+  margin-bottom: 24px;
+  #gmap{
+    height: 100%;
+  }
+  &_wrap{
+    @include clearfix();
+    img{
+      float: left;
+    }
+  }
+  &_text{
+    font-family: OpenSansLight;
+    float: right;
+    text-align: right;
+    padding-left: 20px;
+  }
+}
